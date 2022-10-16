@@ -1,0 +1,8 @@
+<%- include("partials/header"); %>
+
+<%  contettopost.forEach((i) => {%>
+  <h1><%=i.title%> </h1>
+   <p class="blogpost" ><%= i.postcontent %> </p>
+<%});%>
+
+<%- include("partials/footer"); %>

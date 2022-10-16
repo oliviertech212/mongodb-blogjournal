@@ -1,0 +1,18 @@
+
+<%- include("partials/header"); %>
+    <h1>Home</h1>
+    <p> <%= homecont %> </p>
+
+<%  contettopost.forEach((i) => {%>
+  <h1><%=i.title%> </h1>
+   <p class="blogpost"><%=i.postcontent.substring(0,100)+"..."%>
+  <!-- <form class="" action='/posts/:pos' method="post">
+
+    <button class="btn btn-lg btn-primary" type="submit" name="readmore" value="read">Read More</button>
+    </form> -->
+    <a href="/posts/<%=i._id%> ">Read More</a>
+
+  </p>
+<%});%>
+
+<%- include("partials/footer"); %>
